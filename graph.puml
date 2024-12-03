@@ -1,0 +1,16 @@
+@startuml
+skinparam defaultFontName Courier
+"[commit]\nd7b65f" --> "[tree]\nf19df1"
+"[tree]\nf19df1" --> "[tree]\nb85b18\ndir1"
+"[tree]\nb85b18\ndir1" --> "[blob]\n5da2a0\nfile2.txt"
+"[tree]\nb85b18\ndir1" --> "[blob]\n1e7195\nfile3.txt"
+"[tree]\nf19df1" --> "[blob]\nc7c7da\nfile1.txt"
+"[commit]\nd7b65f" --> "[commit]\n005f08"
+"[commit]\n005f08" --> "[tree]\neaabd0"
+"[tree]\neaabd0" --> "[tree]\ne9f65b\ndir1"
+"[tree]\ne9f65b\ndir1" --> "[blob]\n5da2a0\nfile2.txt"
+"[tree]\neaabd0" --> "[blob]\nc7c7da\nfile1.txt"
+"[commit]\n005f08" --> "[commit]\na13981"
+"[commit]\na13981" --> "[tree]\n3c69be"
+"[tree]\n3c69be" --> "[blob]\nc7c7da\nfile1.txt"
+@enduml
